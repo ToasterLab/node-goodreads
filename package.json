@@ -1,0 +1,29 @@
+{
+  "name": "sg-bookfinder",
+  "version": "1.0.0",
+  "description": "checks the availability of books on your GoodReads bookshelves @ your local library",
+  "main": "bookfinder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hueyy/sg-bookfinder.git"
+  },
+  "keywords": [
+    "goodreads",
+    "singapore",
+    "nlb"
+  ],
+  "author": "Huey <leejinhuey@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hueyy/sg-bookfinder/issues"
+  },
+  "homepage": "https://github.com/hueyy/sg-bookfinder#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "request": "^2.79.0",
+    "xml2js": "^0.4.17"
+  }
+}
