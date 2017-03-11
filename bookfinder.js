@@ -1,19 +1,16 @@
-const fs = require("fs"), req = require("request");
-const xml2js = require('xml2js');
+const req = require("request");
 
-var key = "goodreads.key" ,secret = "goodreads.secret";
-
-const endpoints = {
-	gbook: "https://www.goodreads.com/search.xml"
-}
+const endpoints = {gbook: "https://www.goodreads.com/search.xml"}
 
 function bookfinder(){}
+
+bookfinder.prototype.setup = function(api_key, api_secret){key = api_key; secret = api_secret;}
 
 bookfinder.prototype.findBook = function(params, callback){
 	req.get({
 		url:endpoints.gbook,
 		qs:{
-			"key":params.key,
+			"key":key,
 			"q":params.bookTitle,
 			"search":"title"
 		}

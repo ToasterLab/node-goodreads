@@ -6,6 +6,7 @@ key = fs.readFileSync(key, "utf8")
 
 secret = fs. readFileSync(secret, "utf8")
 
-bookfinder.findBook({key, bookTitle:"Ender's Game"}, function(err, data){
+bookfinder.setup(key,secret);
+bookfinder.findBook({bookTitle:"Ender's Game"}, function(err, data){
 	console.log(data)
 })

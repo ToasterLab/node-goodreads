@@ -1,29 +1,25 @@
 {
-  "name": "sg-bookfinder",
+  "name": "node-goodreads",
   "version": "1.0.0",
-  "description": "checks the availability of books on your GoodReads bookshelves @ your local library",
+  "description": "a really simple wrapper for the Goodreads API",
   "main": "bookfinder.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hueyy/sg-bookfinder.git"
+    "url": "git+https://github.com/hueyy/node-goodreads.git"
   },
   "keywords": [
-    "goodreads",
-    "singapore",
-    "nlb"
+    "goodreads"
   ],
   "author": "Huey <leejinhuey@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hueyy/sg-bookfinder/issues"
+    "url": "https://github.com/hueyy/node-goodreads/issues"
   },
-  "homepage": "https://github.com/hueyy/sg-bookfinder#readme",
+  "homepage": "https://github.com/hueyy/node-goodreads#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "request": "^2.79.0",
-    "xml2js": "^0.4.17"
+    "request": "^2.79.0"
   }
 }
